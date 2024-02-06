@@ -18,6 +18,8 @@ app.use(morgan('dev'))
 
 app.use('/api/v1/test',require('./routes/testRoutes'))
 app.use('/api/v1/auth',require('./routes/authRouter'))
+app.use('/api/v1/inventory',require('./routes/inventoryRouter'))
+
 const Port=process.env.PORT || 3000;
 
 
